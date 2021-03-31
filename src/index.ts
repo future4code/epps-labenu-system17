@@ -1,26 +1,12 @@
-import express, { Express } from 'express'
-import cors from 'cors'
-// import knex from "knex";
-// import dotenv from "dotenv";
+import app from "./app"
+import addStudent from "./endpoints/addStudent"
+import addTeacher from "./endpoints/addTeacher"
+import createStudent from "./endpoints/createStudent"
+import createTeacher from "./endpoints/createTeacher"
+import getAge from "./endpoints/getAge"
 
-// dotenv.config();
-
-// export const connection = knex({
-// 	client: "mysql",
-// 	connection: {
-//     host: process.env.DB_HOST,
-//     port: 3306,
-//     user: process.env.DB_USER,
-//     password: process.env.DB_PASS,
-//     database: process.env.DB_NAME
-//   }
-// });
-
-const app: Express = express();
-
-app.use(express.json());
-app.use(cors());
-
-app.listen(3003, () => {
-   console.log(`Server is running);
-}
+app.put("/", addStudent);
+app.put("/", addTeacher);
+app.post("/", createStudent);
+app.post("/", createTeacher);
+app.get("/", getAge);
