@@ -1,4 +1,4 @@
-import app from "../app"
+import app from "./app"
 import addStudent from "./endpoints/addStudent"
 import addTeacher from "./endpoints/addTeacher"
 import createStudent from "./endpoints/createStudent"
