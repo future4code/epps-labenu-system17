@@ -37,3 +37,5 @@ export type teacher_expertise = {
     especialidade_id: number
 };
 
+export let classes: Class [] = []
+
