@@ -9,4 +9,4 @@ app.put("/", addStudent);
 app.put("/", addTeacher);
 app.post("/", createStudent);
 app.post("/", createTeacher);
-app.get("/", getAge);
+app.get("/user/:id", getAge);
