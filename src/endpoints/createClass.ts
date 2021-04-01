@@ -1,4 +1,5 @@
 import { Request, Response } from "express"
+import  connection  from "../connection"
 
 
 export default async function createClass(
@@ -7,8 +8,14 @@ export default async function createClass(
 ): Promise<void> {
 
    try {
+      const { id, nome, data_inicio, data_final, modulo } = req.body
+      await connection("classProjeto")
+         .insert({id,  nome, data_inicio, data_final, modulo})
+         res.status(201).send({message: 'Class created succesfully'})
+
+         // res.status(201).send({message: 'Class created succesfully'})
 
    } catch (error) {
-      res.status(500).end()
+      res.status(500).send({message: error.message || error.sqlMessage})
    }
 }
