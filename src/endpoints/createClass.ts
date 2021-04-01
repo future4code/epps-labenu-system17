@@ -8,16 +8,6 @@ export default async function createClass(
 ): Promise<void> {
 
    try {
-         // await connection.raw(`
-         // INSERT INTO class (id, nome, data_inicio, data_final, modulo)
-         // VALUES (
-         //       ${10},
-         //       "${req.body.nome}",
-         //       "${req.body.data_inicio}",
-         //       "${req.body.data_final}",
-         //       ${req.body.modulo}
-         //    )
-         //  `)
       const { id, nome, data_inicio, data_final, modulo } = req.body
       await connection("class")
          .insert({id,  nome, data_inicio, data_final, modulo})
