@@ -2,36 +2,33 @@ POST  http://localhost:3003/create-class
 Content-Type: application/json
 
 {
-   "id": 2,
-   "nome":"Epps",
-   "data_inicio": "2020-09-15",
-   "data_final": "2021-06-01",
-   "modulo": 6
+   "nome":"Newton",
+   "data_inicio": "2020-08-15",
+   "data_final": "2021-05-16",
+   "modulo": 8
 }
 
 ###
 
-POST  http://localhost:3003/create-teacher
+PUT  http://localhost:3003/create-teacher
 Content-Type: application/json
 
 {
-   "id": 11,
-   "nome":"Amanda",
-   "email": "amanda@labenu.com.br",
-   "data_nasc": "1990-05-10",
-   "turma_id": 2
+   "nome":"Darvas",
+   "email": "darvas@labenu.com.br",
+   "data_nasc": "1990-05-20",
+   "turma_id": 1
 }
 
 ###
 
-POST  http://localhost:3003/create-student
+PUT  http://localhost:3003/create-student
 Content-Type: application/json
 
 {
    
-  "id": 10,
-   "nome":"Vivian Oliveira",
-   "email": "vivian@gmail.com",
-   "data_nasc": "1990-01-17",
-   "turma_id": 2
+   "nome":"Allisson",
+   "email": "allisson@gmail.com",
+   "data_nasc": "1990-02-17",
+   "turma_id": 1
 }

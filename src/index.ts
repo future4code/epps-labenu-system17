@@ -8,7 +8,7 @@ import getAge from "./endpoints/getAge"
 
 app.put("/", addStudent);
 app.put("/", addTeacher);
-app.post("/create-student", createStudent);
-app.post("/create-teacher", createTeacher);
+app.put("/create-student", createStudent);
+app.put("/create-teacher", createTeacher);
 app.post("/create-class", createClass);
-app.get("/", getAge);
+app.get("/get-age/:id", getAge);
