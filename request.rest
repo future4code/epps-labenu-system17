@@ -2,10 +2,10 @@ POST  http://localhost:3003/create-class
 Content-Type: application/json
 
 {
-   "nome":"Newton",
-   "data_inicio": "2020-08-15",
-   "data_final": "2021-05-16",
-   "modulo": 8
+   "nome":"Ada",
+   "data_inicio": "2019-09-01",
+   "data_final": "2020-04-01",
+   "tipo": "integral"
 }
 
 ###
