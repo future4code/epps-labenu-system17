@@ -21,7 +21,7 @@ export default async function addExpertises(
                "${req.body.especialidade}"
             )
          `)
-         res.status(201).send({ message: 'Student created successfully' })
+         res.status(201).send({ message: 'Expertises created successfully' })
 
       }
 
