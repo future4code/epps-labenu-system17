@@ -12,7 +12,7 @@ export default async function getAge(
       const id = req.params.id
 
       const result = await connection.raw(`
-         SELECT * FROM class WHERE id = ${id};
+         SELECT * FROM students WHERE id = ${id};
       `)
       
       res.status(201).send({estudante: result[0] })                                                                                                                                                                              

@@ -9,13 +9,7 @@ export default async function createClass(
 ): Promise<void> {
 
    try {
-<<<<<<< HEAD
-      const { id, nome, data_inicio, data_final, modulo } = req.body
-      await connection("class")
-               .insert({id, nome, data_inicio, data_final, modulo})
-         
-            res.status(201).send({message: 'Class created succesfully'})
-=======
+
       let errorCode = 400;
 
       const input: Class = {
@@ -50,7 +44,6 @@ export default async function createClass(
           );
       `);  
       res.status(201).send({ message: 'Class created successfully' })  
->>>>>>> 0ae422914faedc04f696f0e7f9fdbfc04479b385
 
    } catch (error) {
       res.status(500).send({message: error.message || error.sqlMessage})

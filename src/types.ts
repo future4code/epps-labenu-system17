@@ -1,7 +1,24 @@
 export enum TYPE_CLASS {
     INTEGRAL = "integral",
-    NOTURNA = "noturna"
+    NOTURNA = "noturna",
 }
+
+export enum TYPE_TEACHER {
+    REACT = "react",
+    REDUX = "redux",
+    CSS = "css",
+    TESTES = "testes",
+    TYPESCRIPT = "typescript",
+    POOB = "POOB",
+    BACKEND = "backend",
+}
+
+export enum TYPE_STUDENTS {
+    FILMES = "filmes",
+    VIDEOGAME = "videogame",
+    VIOLAO = "violao"
+}
+
 
 export type students = {
     nome: string,
@@ -11,8 +28,8 @@ export type students = {
 };
 
 export type hobby = {
-    id: number,
-    nome: string
+    nome: string,
+    hobby: TYPE_STUDENTS
 }
 
 export type students_hobby = {
@@ -29,16 +46,14 @@ export type Class = {
 };
 
 export type Teacher = {
-    id: number,
     nome: string,
     email: string,
     data_nasc: Date,
-    turma_id: number
+    turma_id: number    
 };
 
-export type teacher_expertise = {
-    docente_id: number,
-    especialidade_id: number
+export type expertise = {
+    especialidade: TYPE_TEACHER
 };
 
 export let classes: Class [] = []
