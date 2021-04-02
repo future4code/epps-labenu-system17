@@ -1,5 +1,4 @@
 export type students = {
-    id: number,
     nome: string,
     email: string,
     data_nasc: Date,
