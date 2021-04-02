@@ -31,7 +31,7 @@ export default async function createClass(
 
           }
       if(input.tipo === TYPE_CLASS.NOTURNA) {
-         input.nome = input.nome += "-na-night";
+         input.nome = input.nome +="-na-night";
       }    
           await connection.raw(`
           INSERT INTO class ( nome, data_inicio, data_final, modulo)
