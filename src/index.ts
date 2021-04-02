@@ -1,13 +1,14 @@
 import app from "./app"
-import addStudent from "./endpoints/addStudent"
-import addTeacher from "./endpoints/addTeacher"
+import addExpertises from "./endpoints/addExpertises"
+import addStudent from "./endpoints/addExpertises"
 import createClass from "./endpoints/createClass"
 import createStudent from "./endpoints/createStudent"
 import createTeacher from "./endpoints/createTeacher"
 import getAge from "./endpoints/getAge"
+import teacherExpertise from "./endpoints/teacherExpertise"
 
-app.put("/", addStudent);
-app.put("/", addTeacher);
+app.put("/especialidade", addExpertises);
+app.post("/teacher-expertise", teacherExpertise);
 app.put("/create-student", createStudent);
 app.put("/create-teacher", createTeacher);
 app.post("/create-class", createClass);

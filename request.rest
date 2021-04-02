@@ -10,14 +10,15 @@ Content-Type: application/json
 
 ###
 
-PUT  http://localhost:3003/create-teacher
+POST  http://localhost:3003/create-teacher
 Content-Type: application/json
 
 {
-   "nome":"Darvas",
-   "email": "darvas@labenu.com.br",
+   "nome":"Vanessa",
+   "email": "vanessa@labenu.com.br",
    "data_nasc": "1990-05-20",
-   "turma_id": 1
+   "turma_id": 3
+
 }
 
 ###
