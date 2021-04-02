@@ -1,0 +1,35 @@
+POST  http://localhost:3003/create-class
+Content-Type: application/json
+
+{
+   "nome":"Ada",
+   "data_inicio": "2019-09-01",
+   "data_final": "2020-04-01",
+   "tipo": "integral"
+}
+
+###
+
+POST  http://localhost:3003/create-teacher
+Content-Type: application/json
+
+{
+   "nome":"Vanessa",
+   "email": "vanessa@labenu.com.br",
+   "data_nasc": "1990-05-20",
+   "turma_id": 3
+
+}
+
+###
+
+PUT  http://localhost:3003/create-student
+Content-Type: application/json
+
+{
+   
+   "nome":"Allisson",
+   "email": "allisson@gmail.com",
+   "data_nasc": "1990-02-17",
+   "turma_id": 1
+}
