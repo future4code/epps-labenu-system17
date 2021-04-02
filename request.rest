@@ -3,11 +3,18 @@ PUT  http://localhost:3003/addStudent
 Content-Type: application/json
 
 {
+<<<<<<< HEAD
    "id": 2,
    "nome":"Newton",
    "data_inicio": "2020-08-15",
    "data_final": "2021-05-16",
    "modulo": 3
+=======
+   "nome":"Ada",
+   "data_inicio": "2019-09-01",
+   "data_final": "2020-04-01",
+   "tipo": "integral"
+>>>>>>> 0ae422914faedc04f696f0e7f9fdbfc04479b385
 }
 
 ###
