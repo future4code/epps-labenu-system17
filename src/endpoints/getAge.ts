@@ -1,4 +1,5 @@
 import { Request, Response } from "express"
+import connection from "../connection"
 
 
 export default async function getAge(
@@ -8,7 +9,18 @@ export default async function getAge(
 
    try {
 
+      const id = req.params.id
+
+      const result = await connection.raw(`
+         SELECT * FROM students WHERE id = ${id};
+      `)
+      
+      res.status(201).send({estudante: result[0] })                                                                                                                                                                              
+
    } catch (error) {
-      res.status(500).end()
+       res.status(400).send({
+            message: error.message || error.sqlMessage
+        })
    }
 }
+
