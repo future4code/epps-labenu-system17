@@ -1,0 +1,15 @@
+
+POST  http://localhost:3003/create-teacher
+Content-Type: application/json
+
+{
+   "nome": "DARVAS",
+   "email": "darvas@gmail.com",
+   "data_nasc": "2020-05-02",
+   "turma_id": 1,
+}
+
+
+###
+
+GET http://localhost:3003/age/3
