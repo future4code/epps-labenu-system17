@@ -8,7 +8,6 @@ export default async function createTeacher(
    req: Request,
    res: Response
 ): Promise<void> {
-
    try {
 
       const input: Teacher = {
