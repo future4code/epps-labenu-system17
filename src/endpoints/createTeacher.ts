@@ -17,20 +17,6 @@ export default async function createTeacher(
          turma_id: req.body.turma_id
       }
 
-      // const especialidades: expertise = {
-      //    especialidade: req.body.especialidade
-      // }
-
-      // if ( !req.body.especialidade) {
-      //    res.status(400).send('Invalid Parameters.')
-      // } else {
-      //    await connection.raw(`
-      //       INSERT INTO expertise (especialidade) VALUES (
-      //          "${req.body.especialidade}"
-      //       )
-      //    `)
-      // }
-
       if (!req.body.nome || !req.body.email || !req.body.data_nasc || !req.body.turma_id) {
          res.status(400).send('Invalid Parameters.')
       } else {
@@ -52,3 +38,4 @@ export default async function createTeacher(
    }
 
 }
+
