@@ -9,6 +9,7 @@ export default async function createClass(
 ): Promise<void> {
 
    try {
+
       let errorCode = 400;
 
       const input: Class = {

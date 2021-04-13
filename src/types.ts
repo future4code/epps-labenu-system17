@@ -2,6 +2,7 @@ export enum TYPE_CLASS {
     INTEGRAL = "integral",
     NOTURNA = "noturna",
 }
+
 export enum TYPE_TEACHER {
     REACT = "react",
     REDUX = "redux",
@@ -11,11 +12,14 @@ export enum TYPE_TEACHER {
     POOB = "POOB",
     BACKEND = "backend",
 }
+
 export enum TYPE_STUDENTS {
     FILMES = "filmes",
     VIDEOGAME = "videogame",
     VIOLAO = "violao"
 }
+
+
 export type students = {
     nome: string,
     email: string,
@@ -43,11 +47,7 @@ export type Teacher = {
     data_nasc: Date,
     turma_id: number    
 };
+
 export type expertise = {
     especialidade: TYPE_TEACHER
-};
-
-export type teacher_expertise = {
-    docente_id: number,
-    especialidade_id:number
 };

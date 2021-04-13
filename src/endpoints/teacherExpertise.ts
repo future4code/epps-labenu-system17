@@ -21,7 +21,7 @@ export default async function teacherExpertise(
                ${req.body.especialidade_id}
                 )
    `)
-   res.status(201).send({ message: 'Student created successfully' })
+   res.status(201).send({ message: 'Teacher created successfully' })
 
 
    } catch (error) {
